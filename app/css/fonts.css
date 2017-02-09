@@ -1,0 +1,29 @@
+/* font-family: "RubikRegular" */
+@font-face {
+  font-family: "RubikRegular";
+  src: url(../fonts/rubik/Rubik-Regular.ttf);
+}
+
+/* font-family: "RubikMedium" */
+@font-face {
+  font-family: "RubikMedium";
+  src: url(../fonts/rubik/Rubik-Medium.ttf);
+}
+
+/* font-family: "RubikLight" */
+@font-face {
+  font-family: "RubikLight";
+  src: url(../fonts/rubik/Rubik-Light.ttf);
+}
+
+/* font-family: "MerriweatherBoldItalic" */
+@font-face {
+  font-family: "MerriweatherBoldItalic";
+  src: url(../fonts/merriweather/Merriweather-BoldItalic.ttf);
+}
+
+/* font-family: "MerriweatherItalic" */
+@font-face {
+  font-family: "MerriweatherItalic";
+  src: url(../fonts/merriweather/Merriweather-Italic.ttf);
+}
