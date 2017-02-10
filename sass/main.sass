@@ -113,12 +113,14 @@ body
 		background-position: center center
 		display: inline-block
 		cursor: pointer
-.first
-	min-height: 641px
+.ss-wp
 	background-image: url(../img/first-bg.jpg)
 	background-repeat: no-repeat
-	background-size: cover
-	background-position: center bottom
+	background-size: 100% auto
+	background-position: center top
+	background-color: #f8f8f8
+.first
+	min-height: 641px
 	padding-top: 42px
 .briefly
 	&__title
@@ -198,7 +200,6 @@ body
 			display: block
 			background-color: transparent
 			position: absolute
-			z-index: -2
 			left: -39px
 			top: -39px
 			@include transition(all 0.5s ease-in-out)
@@ -214,3 +215,86 @@ body
 		top: 210px
 		left: -64px
 		right: -64px
+.f-contact
+	position: fixed
+	right: 206px
+	bottom: 190px
+	display: none
+	&__wp
+		position: relative
+	&__button
+		height: 50px
+		width: 50px
+		border-radius: 50%
+		background-image: url(../img/icon/3.png)
+		background-repeat: no-repeat
+		background-position: center center
+		background-color: #cb3333
+		border: none
+		position: relative
+		&-sh
+			&::before
+				content: ''
+				background-color: #eccfcf
+				width: 70px
+				height: 70px
+				border-radius: 50%
+				display: block
+				position: absolute
+				left: -10px
+				top: -10px
+				z-index: -2
+	&__form
+		width: 330px
+		background-color: #fff
+		padding: 30px
+		position: absolute
+		right: 71px
+		top: 50%
+		border-radius: 5px
+		transform: translateY(-50%)
+		display: none
+		-webkit-box-shadow: 0px 17px 70px 0px rgba(0,0,0,0.15)
+		-moz-box-shadow: 0px 17px 70px 0px rgba(0,0,0,0.15)
+		box-shadow: 0px 17px 70px 0px rgba(0,0,0,0.15)
+		&::after
+			content: ''
+			display: block
+			position: absolute
+			@include triangle(18px 9px, #fff, right);
+			right: -9px
+			top: 50%
+			margin-top: -9px
+		&-button
+			margin-top: 10px
+			display: block
+			width: 100%
+			height: 40px
+			border-radius: 18px
+			line-height: 38px
+			border: 1px solid #cc0000
+			background-color: #cc0000
+			text-transform: uppercase
+			font-family: "RubikMedium", sans-serif
+			font-size: 14px
+			color: #fff
+			text-align: center
+			@include transition(all 0.5s ease-in-out)
+			&:hover
+				background-color: transparent
+				color: #c00
+	&__title
+		color: #56717a
+		display: block
+		font-family: "RubikLight", sans-serif
+		letter-spacing: 0.7px
+		text-align: center
+		padding-bottom: 25px
+	&__input
+		width: 100%
+		display: block
+		height: 40px
+		border-radius: 18px
+		border: 1px solid #e9e3d8
+		text-align: center
+		margin-bottom: 20px
