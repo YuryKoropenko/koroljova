@@ -24,4 +24,12 @@ $(document).ready(function() {
 	$('.f-contact__button').on('click', function() {
 		$('.f-contact__form').fadeToggle();
 	});
+
+/*тригеры*/
+	$('.i-title__button-left').on('click', function(e) {
+		$('.slick-prev').trigger('click', false);
+	});
+	$('.i-title__button-right').on('click', function(e) {
+		$('.slick-next').trigger('click', false);
+	});
 });
