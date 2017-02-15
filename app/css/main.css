@@ -26,13 +26,13 @@ ol, ul {
   list-style: none;
 }
 
-.clearfix:after, .i-slider__row:after, .first__photo:after {
+.clearfix:after, .i-slider__row:after, .first__photo:after, .subscribe form:after {
   content: '';
   display: table;
   clear: both;
 }
 
-.clearfix:before, .i-slider__row:before, .first__photo:before {
+.clearfix:before, .i-slider__row:before, .first__photo:before, .subscribe form:before {
   content: '';
   display: table;
 }
@@ -847,4 +847,133 @@ body {
 
 .footer-top .nav {
   padding: 37px 0;
+}
+
+.header-blog {
+  background-image: url(../img/blog.jpg);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: cover;
+  min-height: 434px;
+}
+
+.header-blog .consultation {
+  padding-top: 107px;
+}
+
+.b-first {
+  background-color: #f8f8f8;
+}
+
+.b-about {
+  padding: 35px 0;
+  width: 100%;
+}
+
+.b-about p {
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-family: "MerriweatherItalic", sans-serif;
+  font-size: 16px;
+  line-height: 26px;
+  color: #2b2828;
+}
+
+.b-second {
+  min-height: 90px;
+  background-color: #e1d3b8;
+}
+
+.subscribe {
+  padding-top: 25px;
+}
+
+.subscribe .appointment__input {
+  width: 48%;
+  margin-right: 1%;
+  float: left;
+}
+
+.subscribe .appointment__button {
+  width: 48%;
+  float: right;
+  margin-left: 1%;
+}
+
+.b-third {
+  background-color: #f8f8f8;
+  padding-top: 40px;
+  padding-bottom: 50px;
+}
+
+.mason {
+  padding: 0 45px;
+}
+
+.mason__item {
+  width: 350px;
+  padding: 0 25px 40px;
+  position: relative;
+  background-color: #fff;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.mason__item:hover {
+  -webkit-box-shadow: 0px 17px 70px 0px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0px 17px 70px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 17px 70px 0px rgba(0, 0, 0, 0.15);
+}
+
+.mason__item-1 {
+  padding-top: 25px;
+}
+
+.mason__item-2 {
+  padding-top: 25px;
+  background-position: center center;
+  background-size: cover;
+}
+
+.mason__item-2 .mason__title {
+  color: #fff;
+}
+
+.mason__item-2 .mason__description {
+  color: #fff;
+}
+
+.mason__img {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+
+.mason__img-wp {
+  height: 250px;
+  margin-bottom: 25px;
+}
+
+.mason__title {
+  color: #000;
+  font-family: "RubikBold", sans-serif;
+  line-height: 24px;
+  letter-spacing: 0.7px;
+  display: block;
+  padding-bottom: 12px;
+}
+
+.mason__description {
+  color: #000;
+  line-height: 21px;
+  letter-spacing: 0.7px;
+  font-size: 14px;
+  display: block;
 }
