@@ -28,10 +28,39 @@
 </head>
 <body>
 	<header class="header">
+		<div class="header-nav-mob">
+			<ul class="nav-mob">
+				<li class="nav__item">
+					<a href="#" class="nav__link">
+						Обо мне
+					</a>
+				</li>
+				<li class="nav__item">
+					<a href="#" class="nav__link">
+						Услуги
+					</a>
+				</li>
+				<li class="nav__item">
+					<a href="#" class="nav__link">
+						Блог
+					</a>
+				</li>
+				<li class="nav__item">
+					<a href="#" class="nav__link">
+						Контакты
+					</a>
+				</li>
+			</ul>
+		</div>
 		<div class="header__substrate">
 			<div class="container">
 				<div class="row">
-					<div class="col-md-10 col-md-offset-1">
+					<div class="col-lg-10 col-lg-offset-1 col-md-12">
+						<div class="logo__wp">
+							<a href="#" class="logo">
+								<img src="img/header-logo.png" alt="" class="logo__img">
+							</a>
+						</div>
 						<div class="header-top">
 							<ul class="nav">
 								<li class="nav__item">
@@ -87,7 +116,19 @@
 		<div class="first">
 			<div class="container">
 				<div class="row">
-					<div class="col-md-6">
+					<div class="col-md-6 col-md-push-6">
+						<div class="first__photo">
+							<div class="photo">
+								<img src="img/photo.png" alt="" class="photo__img">
+							</div>
+							<div class="briefly__title-mob">
+								<b class="briefly__title">
+									Коротко о<br>Марии:
+								</b>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6 col-md-pull-6">
 						<div class="first__briefly">
 							<div class="briefly">
 								<b class="briefly__title">
@@ -116,13 +157,6 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-md-6">
-						<div class="first__photo">
-							<div class="photo">
-								<img src="img/photo.png" alt="" class="photo__img">
-							</div>
-						</div>
-					</div>
 				</div>
 			</div>
 		</div>
@@ -131,6 +165,87 @@
 				<div class="row">
 					<div class="col-md-2 col-md-offset-1">
 						<div class="second__services">
+							<script>
+								$(document).ready(function() {
+									$('.services__slider').slick({
+										slidesToShow: 3,
+										centerMode: true,
+										centerPadding: '60px',
+										arrows: false,
+										asNavFor: '.services__slider-name',
+										responsive: [
+											{
+												breakpoint: 636,
+												settings: {
+													slidesToShow: 1,
+													centerMode: true
+												}
+											}
+										]
+									});
+								});
+							</script>
+							<div class="services__slider">
+								<div class="services__item">
+									<div class="services__item-active"></div>
+									<i class="services__icon" style="background-image: url(img/icon/second/1.png);"></i>
+								</div>
+								<div class="services__item">
+									<div class="services__item-active"></div>
+									<i class="services__icon" style="background-image: url(img/icon/second/2.png);"></i>
+								</div>
+								<div class="services__item">
+									<div class="services__item-active"></div>
+									<i class="services__icon" style="background-image: url(img/icon/second/3.png);"></i>
+								</div>
+								<div class="services__item">
+									<div class="services__item-active"></div>
+									<i class="services__icon" style="background-image: url(img/icon/second/4.png);"></i>
+								</div>
+								<div class="services__item">
+									<div class="services__item-active"></div>
+									<i class="services__icon" style="background-image: url(img/icon/second/5.png);"></i>
+								</div>
+								<div class="services__item">
+									<div class="services__item-active"></div>
+									<i class="services__icon" style="background-image: url(img/icon/second/6.png);"></i>
+								</div>
+							</div>
+							<script>
+								$(document).ready(function() {
+									$('.services__slider-name').slick({
+										asNavFor: '.services__slider',
+										responsive: [
+											{
+												breakpoint: 636,
+												settings: {
+													
+												}
+											}
+										]
+									});
+								});
+							</script>
+							<div class="services__slider-name">
+								<b class="services__title">
+									Метод НЛП
+								</b>
+								<b class="services__title">
+									Групповая консультация
+								</b>
+								<b class="services__title">
+									Психологическая диагностика
+								</b>
+								<b class="services__title">
+									Нейропсихологическая диагностика и коррекция
+								</b>
+								<b class="services__title">
+									Генеративный коучинг
+								</b>
+								<b class="services__title">
+									Эриксоновская терапия
+								</b>
+							</div>
 							<div class="services">
 								<div class="services__item">
 									<div class="services__item-active"></div>
@@ -244,6 +359,9 @@
 					<div class="fourth__advantages">
 						<div class="advantages__img-wp" style="padding-left: 16px;">
 							<img src="img/img1.jpg" alt="" class="advantages__img">
+							<b class="advantages__title">
+								Индивидуальная<br>косультация
+							</b>
 						</div>
 					</div>
 				</div>
@@ -296,7 +414,17 @@
 			</div>
 			<hr>
 			<div class="row" style="background-color: #fff;">
-				<div class="col-md-7">
+				<div class="col-md-5 col-md-push-7">
+					<div class="fourth__advantages">
+						<div class="advantages__img-wp" style="padding-right: 16px;">
+							<img src="img/img2.jpg" alt="" class="advantages__img">
+							<b class="advantages__title">
+								Групповые методы<br>работы
+							</b>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-7 col-md-pull-5">
 					<div class="fourth__advantages">
 						<div class="advantages" style="padding-left: 16px;">
 							<b class="advantages__title">
@@ -342,13 +470,6 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-md-5">
-					<div class="fourth__advantages">
-						<div class="advantages__img-wp" style="padding-right: 16px;">
-							<img src="img/img2.jpg" alt="" class="advantages__img">
-						</div>
-					</div>
-				</div>
 			</div>
 			<hr>
 			<div class="row" style="background-color: #fff;">
@@ -356,6 +477,9 @@
 					<div class="fourth__advantages">
 						<div class="advantages__img-wp" style="text-align: right;">
 							<img src="img/img3.png" alt="" class="advantages__img">
+							<b class="advantages__title">
+								Косультация<br>ON - LINE
+							</b>
 						</div>
 					</div>
 				</div>
@@ -513,6 +637,56 @@
 								</div>
 							</div>
 						</div>
+						<div class="i-block">
+							<div class="i-slider__item">
+								<img src="img/i-slider.jpg" alt="" class="i-slider__img">
+								<div class="i-slider__wp">
+									<b class="i-slider__title">
+										Сублимированный архетип: основные моменты
+									</b>
+									<div class="i-slider__row">
+										<div class="i-slider__time">
+											2017-01-02
+										</div>
+										<div class="i-slider__name">
+											Мария Королева
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="i-slider__item">
+								<img src="img/i-slider.jpg" alt="" class="i-slider__img">
+								<div class="i-slider__wp">
+									<b class="i-slider__title">
+										Сублимированный архетип: основные моменты
+									</b>
+									<div class="i-slider__row">
+										<div class="i-slider__time">
+											2017-01-02
+										</div>
+										<div class="i-slider__name">
+											Мария Королева
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="i-slider__item">
+								<img src="img/i-slider.jpg" alt="" class="i-slider__img">
+								<div class="i-slider__wp">
+									<b class="i-slider__title">
+										Сублимированный архетип: основные моменты
+									</b>
+									<div class="i-slider__row">
+										<div class="i-slider__time">
+											2017-01-02
+										</div>
+										<div class="i-slider__name">
+											Мария Королева
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -531,7 +705,7 @@
 							</div>
 							<div class="contacts__item-wp">
 								<div class="contacts__item">
-									<a href="tel:+74993333333">+7 (499) 333-33-33</a>;
+									<a href="tel:+74993333333">+7 (499) 333-33-33</a><span>;</span>
 									<a href="tel:+74993333333">+7 (499) 333-33-33</a>
 								</div>
 							</div>
@@ -544,8 +718,13 @@
 	<footer class="footer">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-10 col-md-offset-1">
+				<div class="col-lg-10 col-lg-offset-1 col-md-12">
 					<div class="footer-top">
+						<div class="logo-mob">
+							<a href="#" class="logo-mob__link">
+								<img src="img/footer-logo.png" alt="" class="logo-mob__img">
+							</a>
+						</div>
 						<ul class="nav">
 							<li class="nav__item">
 								<a href="#" class="nav__link">

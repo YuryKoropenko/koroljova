@@ -26,13 +26,13 @@ ol, ul {
   list-style: none;
 }
 
-.clearfix:after, .i-slider__row:after {
+.clearfix:after, .i-slider__row:after, .first__photo:after {
   content: '';
   display: table;
   clear: both;
 }
 
-.clearfix:before, .i-slider__row:before {
+.clearfix:before, .i-slider__row:before, .first__photo:before {
   content: '';
   display: table;
 }
@@ -484,18 +484,18 @@ body {
 
 .appointment__input {
   height: 40px;
-  width: 270px;
+  width: 29.33333%;
   border-radius: 18px;
   background-color: #fff;
   border: none;
   text-align: center;
   display: inline-block;
-  margin: 0 15px;
+  margin: 0 1%;
 }
 
 .appointment__button {
   height: 40px;
-  width: 270px;
+  width: 29.33333%;
   border-radius: 18px;
   background-color: #cc3333;
   border: 1px solid #cc3333;
@@ -505,7 +505,7 @@ body {
   font-family: "RubikMedium", sans-serif;
   text-align: center;
   display: inline-block;
-  margin: 0 15px;
+  margin: 0 1%;
   -webkit-transition: all 0.5s ease-in-out;
   -moz-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
