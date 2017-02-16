@@ -14,6 +14,21 @@ $(document).ready(function() {
 		}
 	});
 
+/*кнопка вверх*/
+	$('.arrow-up__button').on('click', function() {
+		$('html, body').animate({scrollTop:0}, 'slow');
+	});
+
+/*появление кнопки вверх*/
+	$(window).scroll(function() {
+		var bo = $('.header').height();
+		if ( $(window).scrollTop() >= bo ){
+			$('.arrow-up__button').fadeIn();
+		} else {
+			$('.arrow-up__button').fadeOut();
+		}
+	});
+
 /*мигание*/
 	function showhide() {
 		$('.f-contact__button-sh').fadeIn(1000, function() {
