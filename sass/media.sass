@@ -8,6 +8,12 @@
 		padding: 30px 44px 0
 	.logo__item
 		padding-top: 0
+	.mason
+		padding: 0
+		&__item
+			width: 303px
+	.header-blog
+		min-height: 434px !important
 	/**/
 
 
@@ -263,6 +269,93 @@
 			width: 100%
 			display: block
 			height: 100%
+	.mason
+		&__item
+			width: 100%
+			padding-left: 0
+			padding-right: 0
+			padding-bottom: 0
+			padding-top: 0
+			margin-left: 0
+			margin-right: 0
+			&-1
+				.mason__wp
+					width: 100%
+					padding-left: 25px
+					padding-right: 25px
+				.i-slider__row
+					left: 25px
+					right: 25px
+			&-2
+				.mason__wp
+					width: 100%
+					padding-left: 25px
+					padding-right: 25px
+				.i-slider__row
+					left: 25px
+					right: 25px
+		&__img-wp
+			width: 145 * 100 / 450 + %
+			float: left
+			position: relative
+			overflow: hidden
+			margin-left: 0
+			margin-right: 0
+			margin-bottom: 0
+			height: 229px
+		&__img
+			width: auto
+			height: 100%
+			left: 50%
+			-webkit-transform: translateX(-50%)
+			transform: translateX(-50%)
+		&__wp
+			width: 290 * 100 / 450 + %
+			float: right
+			padding-top: 25px
+	.subscribe
+		padding-bottom: 25px
+		.appointment__input
+			width: 70%
+			margin: 0 auto 20px
+			float: none
+		.appointment__button
+			width: 70%
+			margin: 0 auto
+			float: none
+	.i-slider__row
+		position: absolute
+		bottom: 24px
+		right: 26px
+		left: 35.555%
+	.mason__description
+		padding-bottom: 60px
+	.header-blog
+		min-height: 529px !important
+	.header-contact
+		min-height: 285px !important
+	.c-maria__title
+		font-size: 28px
+	.map
+		margin-left: -15px
+		margin-right: -15px
+	.contact
+		padding-bottom: 40px
+	.feedback
+		padding-bottom: 0
+	.feedback__input
+		width: 100%
+		float: none
+	.feedback__textarea
+		float: none !important
+	.ui-selectmenu-button
+		width: 70% !important
+		margin: 0 auto !important
+		float: none !important
+	.feedback__button
+		width: 70% !important
+		float: none !important
+		margin: 30px auto
 	/**/
 
 
@@ -280,9 +373,22 @@
 			padding-top: 20px
 	/**/
 
+/* Small Devices, Tablets */
+@media only screen and (max-width : 674px)
+	.header-blog
+		height: 577px
+	/**/
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 558px)
+	.header-blog
+		height: 626px
+	/**/
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 479px)
+	.header-blog
+		height: 676px
 	.header-nav-mob
 		height: 100px
 	.nav-mob
@@ -313,6 +419,44 @@
 		display: block
 	.contacts__item span
 		display: none
+	.subscribe
+		.appointment__button,
+		.appointment__input
+			width: 100% !important
+	.header-contact
+		min-height: 328px !important
+	.contact__right
+		width: 100%
+	.contact__left
+		width: 100%
+	.ui-selectmenu-button
+		width: 100% !important
+	.feedback__button
+		width: 100% !important
+	/**/
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 403px)
+	.mason
+		&__img-wp
+			width: 100%
+			float: none
+			margin-right: -25px
+		&__img
+			width: 100%
+			height: auto
+		&__wp
+			width: 100%
+			float: none
+			padding-left: 25px
+			padding-right: 25px
+		.i-slider__row
+			left: 25px !important
+			right: 25px
+		.i-slider__time
+			float: left !important
+		.i-slider__name
+			float: right !important
 	/**/
 
 /* Custom, iPhone Retina */
@@ -346,6 +490,24 @@
 				display: block
 			.logo__item
 				display: none !important
+	/**/
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 398px)
+	.header-blog
+		height: 724px
+	/**/
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 377px)
+	.header-blog
+		height: 772px
+	/**/
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 366px)
+	.header-blog
+		height: 820px
 	/**/
 
 /* Custom, iPhone Retina */

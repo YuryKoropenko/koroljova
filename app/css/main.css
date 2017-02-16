@@ -26,13 +26,13 @@ ol, ul {
   list-style: none;
 }
 
-.clearfix:after, .i-slider__row:after, .first__photo:after, .subscribe form:after {
+.clearfix:after, .i-slider__row:after, .first__photo:after, .subscribe form:after, .contact__row:after, .feedback form:after {
   content: '';
   display: table;
   clear: both;
 }
 
-.clearfix:before, .i-slider__row:before, .first__photo:before, .subscribe form:before {
+.clearfix:before, .i-slider__row:before, .first__photo:before, .subscribe form:before, .contact__row:before, .feedback form:before {
   content: '';
   display: table;
 }
@@ -55,6 +55,22 @@ input:-moz-placeholder {
 
 input:-ms-input-placeholder {
   text-align: center;
+}
+
+.feedback__input::-webkit-input-placeholder {
+  text-align: left;
+}
+
+.feedback__input::-moz-placeholder {
+  text-align: left;
+}
+
+.feedback__input:-moz-placeholder {
+  text-align: left;
+}
+
+.feedback__input:-ms-input-placeholder {
+  text-align: left;
 }
 
 body {
@@ -914,7 +930,6 @@ body {
 .mason__item {
   width: 350px;
   padding: 0 25px 40px;
-  position: relative;
   background-color: #fff;
   border-radius: 4px;
   margin-bottom: 20px;
@@ -923,6 +938,7 @@ body {
   -webkit-transition: all 0.5s ease-in-out;
   -moz-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
+  position: relative;
 }
 
 .mason__item:hover {
@@ -952,13 +968,17 @@ body {
 .mason__img {
   position: absolute;
   left: 0;
-  right: 0;
   top: 0;
+  width: 100%;
+  display: block;
 }
 
 .mason__img-wp {
+  width: 100%;
   height: 250px;
   margin-bottom: 25px;
+  margin-left: -25px;
+  margin-right: -25px;
 }
 
 .mason__title {
@@ -976,4 +996,129 @@ body {
   letter-spacing: 0.7px;
   font-size: 14px;
   display: block;
+}
+
+.header-contact {
+  min-height: 220px;
+}
+
+.c-maria__title {
+  color: #2b2828;
+  font-family: "MerriweatherBoldItalic", sans-serif;
+  font-size: 38.64px;
+  letter-spacing: 0.7px;
+  text-align: center;
+  display: block;
+  padding: 45px 0;
+}
+
+.map {
+  padding-bottom: 40px;
+}
+
+.map iframe {
+  width: 100%;
+  height: 300px;
+}
+
+.contact {
+  padding-bottom: 86px;
+}
+
+.contact__row {
+  margin-bottom: 10px;
+}
+
+.contact__left b {
+  display: block;
+  width: 140px;
+  text-align: left;
+  color: #56717a;
+  font-family: "RubikMedium", sans-serif;
+  text-transform: uppercase;
+  float: left;
+  letter-spacing: 0.7px;
+}
+
+.contact__right {
+  display: block;
+  float: left;
+}
+
+.contact__right a, .contact__right p {
+  color: #000;
+  letter-spacing: 0.7px;
+}
+
+.feedback {
+  padding-bottom: 86px;
+}
+
+.feedback__input {
+  height: 40px;
+  display: block;
+  border: 1px solid #877f70;
+  border-radius: 20px;
+  padding-left: 28px;
+  width: 48%;
+  float: left;
+  margin-bottom: 20px;
+}
+
+.feedback__input-last {
+  float: right;
+}
+
+.feedback__textarea {
+  height: 175px;
+  display: block;
+  border: 1px solid #877f70;
+  border-radius: 20px;
+  resize: none;
+  padding: 12px 28px;
+  width: 100%;
+  float: left;
+  margin-bottom: 20px;
+}
+
+.feedback .ui-selectmenu-button {
+  height: 40px;
+  display: block;
+  border: 1px solid #877f70;
+  border-radius: 20px;
+  padding-left: 28px !important;
+  padding-top: 0;
+  padding-bottom: 0;
+  line-height: 38px;
+  background-color: transparent !important;
+  width: 48%;
+  float: left;
+}
+
+.feedback .ui-selectmenu-icon,
+.feedback .ui-state-hover .ui-icon,
+.feedback .ui-state-focus .ui-icon,
+.feedback .ui-button:hover .ui-icon,
+.feedback .ui-button:focus .ui-icon {
+  background-image: url(../img/icon/arrow.png);
+  background-repeat: no-repeat;
+  display: block;
+  width: 12px;
+  height: 20px;
+  background-position: left center;
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  margin-top: -10px;
+}
+
+.feedback .ui-selectmenu-button-open .ui-selectmenu-icon {
+  background-position: right center !important;
+}
+
+.feedback__button {
+  width: 48%;
+  float: right;
+  margin: 0;
+  border-radius: 20pxs;
 }

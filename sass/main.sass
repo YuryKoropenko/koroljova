@@ -642,13 +642,13 @@ body
 	&__item
 		width: 350px
 		padding: 0 25px 40px
-		position: relative
 		background-color: #fff
 		border-radius: 4px
 		margin-bottom: 20px
 		margin-left: 10px
 		margin-right: 10px
 		@include transition(all 0.5s ease-in-out)
+		position: relative
 		&:hover
 			-webkit-box-shadow: 0px 17px 70px 0px rgba(0,0,0,0.15)
 			-moz-box-shadow: 0px 17px 70px 0px rgba(0,0,0,0.15)
@@ -666,11 +666,15 @@ body
 	&__img
 		position: absolute
 		left: 0
-		right: 0
 		top: 0
+		width: 100%
+		display: block
 		&-wp
+			width: 100%
 			height: 250px
 			margin-bottom: 25px
+			margin-left: -25px
+			margin-right: -25px
 	&__title
 		color: #000
 		font-family: "RubikBold", sans-serif
@@ -684,3 +688,100 @@ body
 		letter-spacing: 0.7px
 		font-size: 14px
 		display: block
+.header-contact
+	min-height: 220px
+.c-maria
+	&__title
+		color: #2b2828
+		font-family: "MerriweatherBoldItalic", sans-serif
+		font-size: 38.64px
+		letter-spacing: 0.7px
+		text-align: center
+		display: block
+		padding: 45px 0
+.map
+	padding-bottom: 40px
+	iframe
+		width: 100%
+		height: 300px
+.contact
+	padding-bottom: 86px
+	&__row
+		@extend .clearfix
+		margin-bottom: 10px
+	&__left
+		b
+			display: block
+			width: 140px
+			text-align: left
+			color: #56717a
+			font-family: "RubikMedium", sans-serif
+			text-transform: uppercase
+			float: left
+			letter-spacing: 0.7px
+	&__right
+		display: block
+		float: left
+		a, p
+			color: #000
+			letter-spacing: 0.7px
+.feedback
+	padding-bottom: 86px
+	form
+		@extend .clearfix
+	&__input
+		height: 40px
+		display: block
+		border: 1px solid #877f70
+		border-radius: 20px
+		padding-left: 28px
+		width: 48%
+		float: left
+		margin-bottom: 20px
+		&-last
+			float: right
+	&__textarea
+		height: 175px
+		display: block
+		border: 1px solid #877f70
+		border-radius: 20px
+		resize: none
+		padding: 12px 28px
+		width: 100%
+		float: left
+		margin-bottom: 20px
+	.ui-selectmenu-button
+		height: 40px
+		display: block
+		border: 1px solid #877f70
+		border-radius: 20px
+		padding-left: 28px !important
+		padding-top: 0
+		padding-bottom: 0
+		line-height: 38px
+		background-color: transparent !important
+		width: 48%
+		float: left
+	.ui-selectmenu-icon,
+	.ui-state-hover .ui-icon,
+	.ui-state-focus .ui-icon,
+	.ui-button:hover .ui-icon,
+	.ui-button:focus .ui-icon
+		background-image: url(../img/icon/arrow.png)
+		background-repeat: no-repeat
+		display: block
+		width: 12px
+		height: 20px
+		background-position: left center
+		position: absolute
+		right: 20px
+		top: 50%
+		margin-top: -10px
+	.ui-selectmenu-button-open
+		.ui-selectmenu-icon
+			background-position: right center !important
+	&__button
+		width: 48%
+		float: right
+		margin: 0
+		border-radius: 20pxs
