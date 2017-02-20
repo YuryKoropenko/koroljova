@@ -22,6 +22,7 @@
 	<!-- End_Styles -->
 	<!-- Scripts -->
 	<script type="text/javascript" src="libs/jquery/jquery.min.js"></script>
+	<script type="text/javascript" src="libs/mask/jquery.maskedinput.min.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
 	<!-- End_Scripts -->
 </head>
@@ -160,10 +161,15 @@
 					<div class="c-first__feedback">
 						<div class="feedback">
 							<form action="">
-								<input type="text" class="feedback__input" placeholder="Имя">
-								<input type="text" class="feedback__input feedback__input-last" placeholder="e-mail">
+								<input type="text" class="feedback__input" placeholder="Имя" required>
+								<input type="text" class="feedback__input feedback__input-last" placeholder="e-mail" required>
 								<textarea name="" id="" cols="30" rows="10" class="feedback__textarea" placeholder="Опишите ситуацию, которая Вас беспокоит, я Вам дам совет в ближайший час."></textarea>
-								<input type="text" class="feedback__input" placeholder="Телефон">
+								<script>
+									$(document).ready(function() {
+										$('.feedback__input-phone').mask("(999) 999-9999");
+									});
+								</script>
+								<input type="text" class="feedback__input feedback__input-phone" placeholder="Телефон" required>
 								<button class="feedback__button appointment__button">
 									Заказать звонок
 								</button>

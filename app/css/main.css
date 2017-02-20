@@ -1457,3 +1457,258 @@ body {
 .consultation-amenities {
   padding-top: 120px;
 }
+
+.ament-first {
+  background-color: #f8f8f8;
+}
+
+.ament-first .services__icon {
+  margin: 0 auto;
+}
+
+.ament-first .services__item-active {
+  left: 65px;
+}
+
+.i-consultations {
+  padding-bottom: 32px;
+}
+
+.i-consultations__title {
+  font-size: 26px;
+  color: #2b2828;
+  font-family: "MerriweatherBoldItalic", sans-serif;
+  line-height: 34px;
+  letter-spacing: 0.7px;
+  display: block;
+  padding-top: 40px;
+}
+
+.i-consultations__block {
+  padding-bottom: 24px;
+}
+
+.i-consultations__block-title {
+  color: #000;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0.7px;
+  font-family: "RubikMedium", sans-serif;
+  padding: 24px 0;
+  display: block;
+}
+
+.i-consultations__block-title-1 {
+  color: #000;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0.7px;
+  font-family: "RubikMedium", sans-serif;
+  display: block;
+}
+
+.i-consultations__item {
+  position: relative;
+  padding: 12px 0 12px 33px;
+  text-transform: uppercase;
+  color: #56717a;
+  font-family: "RubikMedium", sans-serif;
+  font-size: 16px;
+}
+
+.i-consultations__item::before {
+  content: '';
+  position: absolute;
+  background-image: url(../img/icon/8.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: block;
+  width: 7px;
+  height: 12px;
+  left: 0;
+  top: 16px;
+}
+
+.i-consultations__description {
+  color: #000;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.i-consultations__img {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.i-consultations__img-wp {
+  width: 100%;
+  height: 302px;
+  overflow: hidden;
+  position: relative;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.i-consultations .a-effect__title {
+  color: #000;
+  font-size: 20px;
+  text-transform: none;
+  font-family: "RubikMedium", sans-serif;
+  display: block;
+  padding-top: 16px;
+}
+
+.i-consultations .briefly__list {
+  padding: 16px 0;
+}
+
+.ament-first .services__item {
+  margin-bottom: 95px;
+}
+
+.ament-third {
+  padding-top: 32px;
+  padding-bottom: 30px;
+}
+
+.ament-third .g-consultation__title {
+  padding-bottom: 0;
+}
+
+.g-cons__img {
+  position: absolute;
+  display: block;
+  left: 0;
+  right: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.g-cons__img-wp {
+  margin-right: 30px;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  height: 240px;
+  margin-bottom: 16px;
+}
+
+.g-cons .i-consultations__item {
+  font-size: 14px;
+  color: #000;
+  font-family: "RubikRegular", sans-serif;
+  line-height: 26px;
+  text-transform: none;
+}
+
+.g-cons .i-consultations__item::before {
+  top: 18px;
+}
+
+.g-cons .i-consultations__item span {
+  color: #56717a;
+}
+
+.g-cons .i-consultations__block {
+  padding-bottom: 0;
+}
+
+.g-cons .briefly__list {
+  padding-top: 0;
+  padding-bottom: 25px;
+}
+
+.g-cons .briefly__item {
+  padding-top: 2px;
+  padding-bottom: 2px;
+  font-size: 16px;
+}
+
+.g-cons .briefly__item::before {
+  top: 2px;
+}
+
+.g-cons .zapnpr {
+  width: 100%;
+  padding: 26px 70px;
+  background-color: #f9f6f1;
+}
+
+.g-cons .zapnpr p {
+  color: #000;
+  font-size: 18px;
+  line-height: 26px;
+  letter-spacing: 0.7px;
+  font-family: "MerriweatherItalic", sans-serif;
+}
+
+.appointment__form-ok span {
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 20px;
+  letter-spacing: 0.7px;
+  font-family: "RubikMedium", sans-serif;
+  display: block;
+  padding-top: 10px;
+}
+
+.ament-fourth {
+  padding-top: 32px;
+  padding-bottom: 30px;
+}
+
+.c-online .briefly__item {
+  font-size: 16px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
+.c-online .briefly__item::before {
+  top: 2px;
+}
+
+.c-online .briefly__list {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.ament-fifth {
+  min-height: 376px;
+  background-image: url(../img/10.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  padding-top: 40px;
+}
+
+.d-situation__description {
+  display: block;
+  color: #fff;
+  font-size: 18px;
+  line-height: 26px;
+  letter-spacing: 0.7px;
+  font-family: "MerriweatherItalic", sans-serif;
+}
+
+.ament-first__slider {
+  padding-bottom: 26px;
+}
+
+.ament-first__slider .services__item {
+  margin-bottom: 20px;
+}
+
+.ament-second .briefly__item {
+  font-size: 16px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
+.ament-second .briefly__item::before {
+  top: 2px;
+}

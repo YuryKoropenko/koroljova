@@ -418,5 +418,28 @@
 			</div>
 		</div>
 	</footer>
+	<div class="f-contact">
+		<div class="f-contact__wp">
+			<div class="f-contact__button-sh"></div>
+			<button class="f-contact__button"></button>
+			<div class="f-contact__form">
+				<form action="">
+					<b class="f-contact__title">
+						Закажите звонок от Марии, чтоб подробнее со всем ознакомиться
+					</b>
+					<input type="text" class="f-contact__input" placeholder="Имя" required>
+					<script>
+						$(document).ready(function() {
+							$('.f-contact__input-phone').mask("(999) 999-9999");
+						});
+					</script>
+					<input type="text" class="f-contact__input f-contact__input-phone" placeholder="Номер телефона" required>
+					<button type="submit" class="f-contact__form-button">
+						Позвонить мне
+					</button>
+				</form>
+			</div>
+		</div>
+	</div>
 </body>
 </html>

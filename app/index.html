@@ -23,6 +23,7 @@
 	<!-- Scripts -->
 	<script type="text/javascript" src="libs/jquery/jquery.min.js"></script>
 	<script type="text/javascript" src="libs/slick/slick.min.js"></script>
+	<script type="text/javascript" src="libs/mask/jquery.maskedinput.min.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
 	<!-- End_Scripts -->
 </head>
@@ -339,8 +340,13 @@
 							</b>
 							<div class="appointment__form">
 								<form action="">
-									<input type="text" class="appointment__input" placeholder="Имя">
-									<input type="text" class="appointment__input" placeholder="Номер телефона">
+									<input type="text" class="appointment__input" placeholder="Имя" required>
+									<script>
+										$(document).ready(function() {
+											$('.appointment__input-phone').mask("(999) 999-9999");
+										});
+									</script>
+									<input type="text" class="appointment__input appointment__input-phone" placeholder="Номер телефона" required>
 									<button class="appointment__button">
 										Заказать звонок
 									</button>
@@ -766,8 +772,13 @@
 					<b class="f-contact__title">
 						Закажите звонок от Марии, чтоб подробнее со всем ознакомиться
 					</b>
-					<input type="text" class="f-contact__input" placeholder="Имя">
-					<input type="text" class="f-contact__input" placeholder="Номер телефона">
+					<input type="text" class="f-contact__input" placeholder="Имя" required>
+					<script>
+						$(document).ready(function() {
+							$('.f-contact__input-phone').mask("(999) 999-9999");
+						});
+					</script>
+					<input type="text" class="f-contact__input f-contact__input-phone" placeholder="Номер телефона" required>
 					<button type="submit" class="f-contact__form-button">
 						Позвонить мне
 					</button>

@@ -23,6 +23,7 @@
 	<!-- Scripts -->
 	<script type="text/javascript" src="libs/jquery/jquery.min.js"></script>
 	<script type="text/javascript" src="libs/slick/slick.min.js"></script>
+	<script type="text/javascript" src="libs/mask/jquery.maskedinput.min.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
 	<!-- End_Scripts -->
 </head>
@@ -112,12 +113,69 @@
 	<div class="ament-first">
 		<div class="container">
 			<div class="row">
+				<div class="col-md-12">
+					<div class="ament-first__slider">
+						<script>
+								$(document).ready(function() {
+									$('.services__slider').slick({
+										slidesToShow: 1,
+										centerMode: true,
+										centerPadding: '60px',
+										arrows: false,
+										asNavFor: '.services__slider-name'
+									});
+								});
+							</script>
+							<div class="services__slider">
+								<div class="services__item">
+									<div class="services__item-active"></div>
+									<i class="services__icon" style="background-image: url(img/icon/second/1.png);"></i>
+								</div>
+								<div class="services__item">
+									<div class="services__item-active"></div>
+									<i class="services__icon" style="background-image: url(img/icon/second/2.png);"></i>
+								</div>
+								<div class="services__item">
+									<div class="services__item-active"></div>
+									<i class="services__icon" style="background-image: url(img/icon/second/7.png);"></i>
+								</div>
+							</div>
+							<script>
+								$(document).ready(function() {
+									$('.services__slider-name').slick({
+										asNavFor: '.services__slider',
+										responsive: [
+											{
+												breakpoint: 636,
+												settings: {
+													
+												}
+											}
+										]
+									});
+								});
+							</script>
+							<div class="services__slider-name">
+								<b class="services__title">
+									Индивидуальные консультации
+								</b>
+								<b class="services__title">
+									Групповые консультации
+								</b>
+								<b class="services__title">
+									on-line консультации
+								</b>
+							</div>
+					</div>
+				</div>
+			</div>
+			<div class="row hidden-serv">
 				<div class="col-md-4">
 					<div class="services__item">
 						<div class="services__item-active"></div>
-						<i class="services__icon" style="background-image: url(img/icon/second/2.png);"></i>
+						<i class="services__icon" style="background-image: url(img/icon/second/1.png);"></i>
 						<b class="services__title">
-							Групповая консультация
+							Индивидуальные<br>консультации
 						</b>
 					</div>
 				</div>
@@ -126,19 +184,482 @@
 						<div class="services__item-active"></div>
 						<i class="services__icon" style="background-image: url(img/icon/second/2.png);"></i>
 						<b class="services__title">
-							Групповая консультация
+							Групповые<br>консультации
 						</b>
 					</div>
 				</div>
 				<div class="col-md-4">
 					<div class="services__item">
 						<div class="services__item-active"></div>
-						<i class="services__icon" style="background-image: url(img/icon/second/2.png);"></i>
+						<i class="services__icon" style="background-image: url(img/icon/second/7.png);"></i>
 						<b class="services__title">
-							Групповая консультация
+							on-line<br>консультации
 						</b>
 					</div>
 				</div>
+			</div>
+		</div>
+	</div>
+	<div class="ament-second">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="ament-second__i-consultations">
+						<div class="i-consultations">
+							<h2 class="i-consultations__title">
+								Индивидульные консультации
+							</h2>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<div class="ament-second__i-consultations">
+						<div class="i-consultations">
+							<b class="i-consultations__block-title-1">
+								Делятся:
+							</b>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="ament-second__i-consultations">
+						<div class="i-consultations">
+							<ul class="i-consultations__block">
+								<li class="i-consultations__item">
+									Консультации для взрослых.
+								</li>
+								<li class="i-consultations__item">
+									Работа с детьми и сложными подростками
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="ament-second__i-consultations">
+						<div class="i-consultations">
+							<ul class="i-consultations__block">
+								<li class="i-consultations__item">
+									Психологическое консультирование пар
+								</li>
+								<li class="i-consultations__item">
+									Системная семейная психотерапия (родители, дети)
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<div class="ament-second__i-consultations">
+						<div class="i-consultations">
+							<p class="i-consultations__description">
+								Индивидуальные консультации – это беседы наедине с психологом, совместная работа над решением возникшей проблемы, которая строится на основе взаимопонимания и желания найти наилучший выход.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<div class="ament-second__i-consultations">
+						<div class="i-consultations">
+							<div class="i-consultations__img-wp">
+								<img src="img/8.jpg" alt="" class="i-consultations__img">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<div class="ament-second__i-consultations">
+						<div class="i-consultations">
+							<p class="i-consultations__description">
+								В жизни каждого человека случаются ситуации, когда сложно обойтись без поддержки. Для одних – это минуты отчаяния, для других – депрессия, хроническая тревожность, переутомление. Даже у самых сильных и волевых иногда садятся батарейки! Можно игнорировать проблему, искать выход самостоятельно или с головой уйти в работу. А можно обратиться к психологу, который выслушает, поможет взглянуть на ситуацию с другой стороны и подскажет решение. Это лучший способ преодолеть трудности.<br><br>Если внутри накопилась боль, нет желания улыбаться, браться за новые дела, общаться с родными и близкими, вам одиноко или просто хочется разобраться в себе, запишитесь на консультацию. Я работаю с широким кругом психологических проблем, помогу вам обрести себя, научиться снова быть счастливым.
+							</p>
+							<b class="a-effect__title">
+								Консультация психолога необходима, если
+							</b>
+							<ul class="briefly__list">
+								<li class="briefly__item">
+									Не можете разобраться в себе.
+								</li>
+								<li class="briefly__item">
+									Не знаете, как правильно поступить.
+								</li>
+								<li class="briefly__item">
+									Отношения с близкими «трещат по швам».
+								</li>
+								<li class="briefly__item">
+									Нет уверенности при принятии решений.
+								</li>
+								<li class="briefly__item">
+									Не получается справиться с переживаниями.
+								</li>
+								<li class="briefly__item">
+									Волнами накатывает тоска.
+								</li>
+							</ul>
+							<p class="i-consultations__description">
+								Индивидуальные консультации проводятся для взрослых и детей, включая сложных подростков, а также семейные пары, которые хотят наладить отношение и сохранить брак.<br>Работа строится на доверительном диалоге. Встречи проходят в конфиденциальной, комфортной обстановке, которая располагает к максимальной откровенности. Главная задача – определить причины беспокойства, неприятных симптомов. После чего составляется индивидуальный план работы, для закрепления результатов вам дадут «домашние задания». Консультирование завершается, когда достигнута намеченная цель и решены все поставленные задачи.
+							</p>
+							<div class="i-consultations__img-wp">
+								<img src="img/9.jpg" alt="" class="i-consultations__img i-consultations__img-1">
+							</div>
+							<p class="i-consultations__description">
+								Чтобы записаться на индивидуальную консультацию позвоните мне, оставьте заявку на сайте, отправьте электронное письмо или закажите звонок, отметив свое имя и контактный номер телефона.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="third">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-10 col-md-offset-1">
+					<div class="third__appointment">
+						<div class="appointment">
+							<b class="appointment__title">
+								Чтобы записаться на прием, звоните или оставляйте заявку на сайте!
+							</b>
+							<div class="appointment__form">
+								<form action="">
+									<input type="text" class="appointment__input" placeholder="Имя" required>
+									<script>
+										$(document).ready(function() {
+											$('.appointment__input-phone').mask("(999) 999-9999");
+										});
+									</script>
+									<input type="text" class="appointment__input appointment__input-phone" placeholder="Номер телефона" required>
+									<button class="appointment__button">
+										Заказать звонок
+									</button>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="ament-third">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="ament-third__g-cons">
+						<div class="g-cons">
+							<h2 class="g-consultation__title">
+								Групповые консультации
+							</h2>
+							<b class="i-consultations__block-title">
+								Делятся:
+							</b>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6 col-md-push-6">
+					<div class="ament-third__g-cons">
+						<div class="g-cons">
+							<p class="i-consultations__description">
+								Сложно оценить себя со стороны, понять, что о тебе думают другие люди. Не менее важно осознавать, что ты не одинок, и в этом мире есть еще много людей, которые имеют схожие проблемы. Сообща проще найти решение даже самой сложной задачи и следовать разработанному плану выхода из кризиса. Групповые консультации дают такую возможность.
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 col-md-pull-6">
+					<div class="ament-third__g-cons">
+						<div class="g-cons">
+							<div class="g-cons__img-wp">
+								<img src="img/img3.jpg" alt="" class="g-cons__img">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<div class="ament-third__g-cons">
+						<div class="g-cons">
+							<p class="i-consultations__description">
+								Групповые консультации предназначены только для взрослых. Перед зачислением в группу необходимо пройти индивидуальное собеседование. Обычно группа включает 8–12 человек.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<div class="ament-third__g-cons">
+						<div class="g-cons">
+							<b class="i-consultations__block-title">
+								Плюсы групповой терапии
+							</b>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6">
+					<div class="ament-third__g-cons">
+						<div class="g-cons">
+							<ul class="i-consultations__block">
+								<li class="i-consultations__item">
+									<span>Сила воздействия.</span> Поддержка и фрустрация в группе выражены значительно сильнее, чем в индивидуальном консультировании. Когда терапевт наедине советует что-то, что сложно принять, можно отмахнуться. Намного труднее сделать это, если рекомендации исходят от 8 человек из 12. Аналогично с одобрением: флюиды и эмоции группы – это мощнейший ресурс, толчок, волна позитива, которых не достичь при индивидуальной работе.
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="ament-third__g-cons">
+						<div class="g-cons">
+							<ul class="i-consultations__block">
+								<li class="i-consultations__item">
+									<span>Отработка сценариев поведения.</span> В группе человек проживает «маленькую жизнь»: взаимодействует с людьми, исследует свое поведение, конфликтность, уязвимость, делает выводы.
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6">
+					<div class="ament-third__g-cons">
+						<div class="g-cons">
+							<ul class="i-consultations__block">
+								<li class="i-consultations__item">
+									<span>Моделирование ситуаций.</span> В коллективе проще проводить различные упражнения и эксперименты – люди выступают инструментами. К примеру, психодрама – преимущественно групповая методика.
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="ament-third__g-cons">
+						<div class="g-cons">
+							<ul class="i-consultations__block">
+								<li class="i-consultations__item">
+									<span>Обратная связь.</span> Рассказывая о своих переживаниях в группе, человек ощущает отдачу от всех участников, насыщается информацией об их жизненном опыте, получает ответы на свои вопросы. В индивидуальном консультировании возможна обратная связь только с терапевтом.
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<div class="ament-third__g-cons">
+						<div class="g-cons">
+							<b class="i-consultations__block-title">
+								Минусы групповой терапии
+							</b>
+							<ul class="briefly__list">
+								<li class="briefly__item">
+									Сложнее открыться. Признать свои слабости, поделиться сокровенным, открыть душу перед группой людей намного труднее, чем с терапевтом. Но открытость – важный показатель, от которого зависит успешность работы группы.
+								</li>
+								<li class="briefly__item">
+									Меньше внимания. Работая с группой, психолог распределяет свое время и внимание поровну между всеми участниками, переключается на групповые процессы. Каждый находится в центре внимания терапевта и группы ограниченный промежуток времени. Есть риск в какие-то моменты заскучать, почувствовать дефицит внимания. Одновременно это является плюсом: можно оценить и проанализировать личное поведение в такой ситуации.
+								</li>
+							</ul>
+							<div class="zapnpr">
+								<p>
+									Чтобы записаться на тренинг, стать участником терапевтической или учебной группы, позвоните мне или закажите обратный звонок.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="third">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-10 col-md-offset-1">
+					<div class="third__appointment">
+						<div class="appointment">
+							<b class="appointment__title">
+								Чтобы записаться на прием, звоните или оставляйте заявку на сайте!
+							</b>
+							<div class="appointment__form">
+								<div class="appointment__form-ok">
+									<span>
+										Спасибо за Ваше обращение!
+									</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="ament-fourth">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="ament-fourth__c-online">
+						<div class="c-online">
+							<h2 class="g-consultation__title">
+								On-line  консультация
+							</h2>
+							<p class="i-consultations__description">
+								Сегодня новые технологии доступны многим и активно используются в повседневной жизни. Программа Skype уже стала неотъемлемым атрибутом консультационной деятельности в разных областях, включая психологию.<br>Конечно, онлайн-консультация не заменит полноценную терапию в кабинете психолога и не позволит решить серьезную проблему, но поможет, если вы:
+							</p>
+							<ul class="briefly__list">
+								<li class="briefly__item">
+									живете в другом городе;
+								</li>
+								<li class="briefly__item">
+									не можете приехать в офис по состоянию здоровья;
+								</li>
+								<li class="briefly__item">
+									хотите задать первичные вопросы и определить круг проблем;
+								</li>
+								<li class="briefly__item">
+									желаете получить какие-то уточнения или разъяснения после встречи;
+								</li>
+								<li class="briefly__item">
+									возникла срочная необходимость выйти со мной на связь.
+								</li>
+							</ul>
+							<p class="i-consultations__description">
+								Онлайн-консультация – это возможность получить общие рекомендации. Но если ситуация требует терапевтической помощи, потребуется записаться на индивидуальную консультацию или в групповые занятия.<br>Сообщите ваше имя и опишите проблему, которая беспокоит, в ближайшее время я обязательно свяжусь с вами и дам совет.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="ament-fifth">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-5">
+					<div class="ament-fifth__d-situation">
+						<div class="d-situation">
+							<p class="d-situation__description">
+								Опишите ситуацию, которая Вас беспокоит, оставьте личные данные для звонка и мы согласуем с Вами условия проведения консультации по Skype.
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 col-md-offset-1">
+					<div class="c-first__feedback">
+						<div class="feedback" style="padding-bottom: 0;">
+							<form action="">
+								<input type="text" class="feedback__input" placeholder="Имя" required>
+								<input type="text" class="feedback__input feedback__input-last" placeholder="e-mail" required>
+								<textarea name="" id="" cols="30" rows="10" class="feedback__textarea" placeholder="Опишите ситуацию, которая Вас беспокоит, я Вам дам совет в ближайший час."></textarea>
+								<script>
+									$(document).ready(function() {
+										$('.feedback__input-phone').mask("(999) 999-9999");
+									});
+								</script>
+								<input type="text" class="feedback__input feedback__input-phone" placeholder="Телефон" required>
+								<button class="feedback__button appointment__button">
+									Заказать звонок
+								</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="w-contacts">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 col-md-offset-3">
+					<div class="w-contacts__contacts">
+						<div class="contacts">
+							<div class="contacts__item-wp">
+								<div class="contacts__item">
+									<a href="#">mariya@yahoo.com</a>
+								</div>
+							</div>
+							<div class="contacts__item-wp">
+								<div class="contacts__item">
+									<a href="tel:+74993333333">+7 (499) 333-33-33</a><span>;</span>
+									<a href="tel:+74993333333">+7 (499) 333-33-33</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-10 col-lg-offset-1 col-md-12">
+					<div class="footer-top">
+						<div class="logo-mob">
+							<a href="#" class="logo-mob__link">
+								<img src="img/footer-logo.png" alt="" class="logo-mob__img">
+							</a>
+						</div>
+						<ul class="nav">
+							<li class="nav__item">
+								<a href="#" class="nav__link">
+									Обо мне
+								</a>
+							</li>
+							<li class="nav__item">
+								<a href="#" class="nav__link">
+									Услуги
+								</a>
+							</li>
+							<li class="nav__item logo__item">
+								<a href="#" class="logo">
+									<img src="img/footer-logo.png" alt="" class="logo__img">
+								</a>
+							</li>
+							<li class="nav__item">
+								<a href="#" class="nav__link">
+									Блог
+								</a>
+							</li>
+							<li class="nav__item">
+								<a href="#" class="nav__link">
+									Контакты
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<div class="f-contact">
+		<div class="f-contact__wp">
+			<div class="f-contact__button-sh"></div>
+			<button class="f-contact__button"></button>
+			<div class="f-contact__form">
+				<form action="">
+					<b class="f-contact__title">
+						Закажите звонок от Марии, чтоб подробнее со всем ознакомиться
+					</b>
+					<input type="text" class="f-contact__input" placeholder="Имя" required>
+					<script>
+						$(document).ready(function() {
+							$('.f-contact__input-phone').mask("(999) 999-9999");
+						});
+					</script>
+					<input type="text" class="f-contact__input f-contact__input-phone" placeholder="Номер телефона" required>
+					<button type="submit" class="f-contact__form-button">
+						Позвонить мне
+					</button>
+				</form>
 			</div>
 		</div>
 	</div>
