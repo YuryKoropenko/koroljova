@@ -424,11 +424,11 @@
 	.g-consultation__img-wp
 		margin-bottom: 16px
 	.g-consultation__img
-		width: auto
-		left: 0
-		right: 0
 		height: 100%
-		width: 100%
+		display: block
+		left: auto
+		right: 0
+		width: auto
 		&-wp
 			overflow-y: hidden
 			overflow-x: visible
@@ -544,6 +544,8 @@
 		font-size: 18px
 	.header-amenities
 		height: 458px !important
+	.b-third
+		padding-bottom: 0
 	/**/
 
 
@@ -741,7 +743,10 @@
 
 
 /* Extra Small Devices, Phones */
-@media only screen and (min-width : 480px)
+@media only screen and (min-width : 500px)
+	.g-consultation__img
+		width: 100%
+		height: auto
 	/**/
 
 
