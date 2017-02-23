@@ -302,6 +302,7 @@ body {
   position: relative;
   padding-bottom: 72px;
   cursor: pointer;
+  display: block;
 }
 
 .services__item-active {
