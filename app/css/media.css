@@ -2,7 +2,7 @@
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1199px) {
   .nav__item {
-    padding: 30px 44px 0;
+    padding: 30px 38px 0;
   }
   .logo__item {
     padding-top: 0;
