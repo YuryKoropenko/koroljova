@@ -25,6 +25,20 @@
   /**/
 }
 
+@media only screen and (max-height: 645px) {
+  .metod__block .metod__item:first-child {
+    display: none;
+  }
+  /**/
+}
+
+@media only screen and (max-width: 762px) {
+  .metod__block .metod__item:first-child {
+    display: none;
+  }
+  /**/
+}
+
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 991px) {
   .second .services__title {

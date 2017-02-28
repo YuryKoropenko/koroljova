@@ -16,12 +16,14 @@
 	<link rel="stylesheet" href="libs/bootstrap/bootstrap.min.css">
 	<link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
 	<link rel="stylesheet" href="libs/jquery-ui/jquery-ui.min.css">
+	<link rel="stylesheet" href="libs/slick/slick.css">
 	<link rel="stylesheet" href="css/fonts.css">
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/media.css">
 	<!-- End_Styles -->
 	<!-- Scripts -->
 	<script type="text/javascript" src="libs/jquery/jquery.min.js"></script>
+	<script type="text/javascript" src="libs/slick/slick.min.js"></script>
 	<script type="text/javascript" src="libs/jquery-ui/jquery-ui.min.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
 	<!-- End_Scripts -->
@@ -126,7 +128,7 @@
 							</div>
 							<ul class="metod__block">
 								<li class="metod__item">
-									<a href="#" class="metod__link">
+									<a href="#" class="metod__link certificates__button">
 										Сертификаты Марии
 									</a>
 								</li>
@@ -568,6 +570,80 @@
 						Позвонить мне
 					</button>
 				</form>
+			</div>
+		</div>
+	</div>
+	<div class="certificates__wp">
+		<div class="certificates__bg"></div>
+		<div class="certificates">
+			<button class="certificates__close"></button>
+			<script>
+				$(document).ready(function() {
+					$('.certificates__top').slick({
+						asNavFor: '.certificates__bottom'
+					});
+				});
+			</script>
+			<div class="certificates__top">
+				<div class="certificates__top-item">
+					<img src="img/certificates/1.jpeg" alt="" class="certificates__top-img">
+				</div>
+				<div class="certificates__top-item">
+					<img src="img/certificates/2.jpeg" alt="" class="certificates__top-img">
+				</div>
+				<div class="certificates__top-item">
+					<img src="img/certificates/3.jpeg" alt="" class="certificates__top-img">
+				</div>
+				<div class="certificates__top-item">
+					<img src="img/certificates/4.jpeg" alt="" class="certificates__top-img">
+				</div>
+				<div class="certificates__top-item">
+					<img src="img/certificates/5.jpeg" alt="" class="certificates__top-img">
+				</div>
+				<div class="certificates__top-item">
+					<img src="img/certificates/6.jpeg" alt="" class="certificates__top-img">
+				</div>
+				<div class="certificates__top-item">
+					<img src="img/certificates/7.jpeg" alt="" class="certificates__top-img">
+				</div>
+				<div class="certificates__top-item">
+					<img src="img/certificates/8.jpeg" alt="" class="certificates__top-img">
+				</div>
+			</div>
+			<script>
+				$(document).ready(function() {
+					$('.certificates__bottom').slick({
+						asNavFor: '.certificates__top',
+						slidesToShow: 4,
+						focusOnSelect: true
+					});
+				});
+			</script>
+			<div class="certificates__bottom">
+				<div class="certificates__bottom-item">
+					<img src="img/certificates/1.jpeg" alt="" class="certificates__bottom-img">
+				</div>
+				<div class="certificates__bottom-item">
+					<img src="img/certificates/2.jpeg" alt="" class="certificates__bottom-img">
+				</div>
+				<div class="certificates__bottom-item">
+					<img src="img/certificates/3.jpeg" alt="" class="certificates__bottom-img">
+				</div>
+				<div class="certificates__bottom-item">
+					<img src="img/certificates/4.jpeg" alt="" class="certificates__bottom-img">
+				</div>
+				<div class="certificates__bottom-item">
+					<img src="img/certificates/5.jpeg" alt="" class="certificates__bottom-img">
+				</div>
+				<div class="certificates__bottom-item">
+					<img src="img/certificates/6.jpeg" alt="" class="certificates__bottom-img">
+				</div>
+				<div class="certificates__bottom-item">
+					<img src="img/certificates/7.jpeg" alt="" class="certificates__bottom-img">
+				</div>
+				<div class="certificates__bottom-item">
+					<img src="img/certificates/8.jpeg" alt="" class="certificates__bottom-img">
+				</div>
 			</div>
 		</div>
 	</div>

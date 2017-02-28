@@ -1,4 +1,37 @@
 $(document).ready(function() {
+/*mod*/
+    $('.certificates__button').on('click', function() {
+        $('.certificates').css({
+            'opacity': '1',
+            'z-index': 999
+        });
+        $('.certificates__bg').css({
+            'opacity': '1',
+            'z-index': 999
+        });
+        return false;
+    });
+    $('.certificates__bg').on('click', function() {
+        $('.certificates').css({
+            'opacity': '0',
+            'z-index': -999
+        });
+        $('.certificates__bg').css({
+            'opacity': '0',
+            'z-index': -999
+        });
+    });
+    $('.certificates__close').on('click', function() {
+        $('.certificates').css({
+            'opacity': '0',
+            'z-index': -999
+        });
+        $('.certificates__bg').css({
+            'opacity': '0',
+            'z-index': -999
+        });
+    });
+
 /*скроллинг*/
 	$('.scroll__icon').on('click', function() {
 		var ht = $('.header').height();
