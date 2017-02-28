@@ -22,18 +22,32 @@
 			width: 294px
 	/**/
 
-@media only screen and (max-height : 645px)
-	.metod__block
-		.metod__item
-			&:first-child
-				display: none
+@media only screen and (max-width : 570px)
+	.certificates
+		height: auto !important
+		.certificates__bottom
+			display: none
 	/**/
 
 @media only screen and (max-width : 762px)
-	.metod__block
-		.metod__item
-			&:first-child
-				display: none
+	.certificates
+		width: 80%
+		height: 90%
+		padding: 5% 0
+		.certificates__top
+			padding: 0 20%
+			.certificates__top-item
+				position: relative
+				height: 266px
+			.certificates__top-img
+				width: 100%
+				height: auto
+				position: absolute
+				top: 50%
+				-webkit-transform: translateY(-50%)
+				transform: translateY(-50%)
+		.certificates__bottom
+			margin-top: 16px
 	/**/
 
 /* Medium Devices, Desktops */

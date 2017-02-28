@@ -615,7 +615,16 @@
 					$('.certificates__bottom').slick({
 						asNavFor: '.certificates__top',
 						slidesToShow: 4,
-						focusOnSelect: true
+						focusOnSelect: true,
+						draggable: false,
+						responsive: [
+							{
+								breakpoint: 762,
+								settings: {
+									slidesToShow: 2
+								}
+							}
+						]
 					});
 				});
 			</script>

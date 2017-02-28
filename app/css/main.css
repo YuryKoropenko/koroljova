@@ -1731,6 +1731,10 @@ body {
   opacity: 0;
 }
 
+.certificates__wp {
+  overflow-y: auto;
+}
+
 .certificates__bg {
   position: fixed;
   left: 0;
@@ -1758,6 +1762,7 @@ body {
   border: none;
   background-color: transparent;
   cursor: pointer;
+  z-index: 999;
 }
 
 .certificates__top {
@@ -1819,6 +1824,7 @@ body {
   margin: 0 auto;
   width: 115px;
   height: 80px;
+  cursor: pointer;
 }
 
 .certificates__bottom .slick-arrow {
