@@ -81,6 +81,7 @@ body {
   font-family: "RubikRegular", sans-serif;
   overflow-x: hidden;
   letter-spacing: 0.7px;
+  max-width: 100%;
 }
 
 .hidden {
